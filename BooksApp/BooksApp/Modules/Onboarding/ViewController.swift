@@ -11,7 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = UIColor.Primary.background
+        
+    
     }
 }
 

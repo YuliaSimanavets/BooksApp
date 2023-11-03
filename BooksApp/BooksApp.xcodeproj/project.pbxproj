@@ -16,6 +16,8 @@
 		CA4848AE2AF51B8200EC4351 /* BooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848AD2AF51B8200EC4351 /* BooksAppTests.swift */; };
 		CA4848B82AF51B8200EC4351 /* BooksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848B72AF51B8200EC4351 /* BooksAppUITests.swift */; };
 		CA4848BA2AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848B92AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift */; };
+		CA4848CD2AF51E1600EC4351 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848CC2AF51E1600EC4351 /* String.swift */; };
+		CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848CE2AF51E3500EC4351 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CA4848B32AF51B8200EC4351 /* BooksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4848B72AF51B8200EC4351 /* BooksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAppUITests.swift; sourceTree = "<group>"; };
 		CA4848B92AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA4848CC2AF51E1600EC4351 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CA4848CE2AF51E3500EC4351 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,8 @@
 			children = (
 				CA4848932AF51B8000EC4351 /* AppDelegate.swift */,
 				CA4848952AF51B8000EC4351 /* SceneDelegate.swift */,
-				CA4848972AF51B8000EC4351 /* ViewController.swift */,
+				CA4848C82AF51D8C00EC4351 /* Base */,
+				CA4848C62AF51CF900EC4351 /* Modules */,
 				CA48489F2AF51B8200EC4351 /* Assets.xcassets */,
 				CA4848A12AF51B8200EC4351 /* LaunchScreen.storyboard */,
 				CA4848A42AF51B8200EC4351 /* Info.plist */,
@@ -125,6 +130,39 @@
 				CA4848B92AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift */,
 			);
 			path = BooksAppUITests;
+			sourceTree = "<group>";
+		};
+		CA4848C62AF51CF900EC4351 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848C72AF51D0400EC4351 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CA4848C72AF51D0400EC4351 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848972AF51B8000EC4351 /* ViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CA4848C82AF51D8C00EC4351 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848C92AF51D9A00EC4351 /* Extensions */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CA4848C92AF51D9A00EC4351 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848CE2AF51E3500EC4351 /* UIColor.swift */,
+				CA4848CC2AF51E1600EC4351 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4848CD2AF51E1600EC4351 /* String.swift in Sources */,
+				CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */,
 				CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */,
 				CA4848982AF51B8000EC4351 /* ViewController.swift in Sources */,
 				CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */,

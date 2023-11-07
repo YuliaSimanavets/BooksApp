@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848932AF51B8000EC4351 /* AppDelegate.swift */; };
 		CA4848962AF51B8000EC4351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848952AF51B8000EC4351 /* SceneDelegate.swift */; };
-		CA4848982AF51B8000EC4351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848972AF51B8000EC4351 /* ViewController.swift */; };
+		CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848972AF51B8000EC4351 /* OnboardingViewController.swift */; };
 		CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA48489C2AF51B8000EC4351 /* BooksApp.xcdatamodeld */; };
 		CA4848A02AF51B8200EC4351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA48489F2AF51B8200EC4351 /* Assets.xcassets */; };
 		CA4848A32AF51B8200EC4351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4848A12AF51B8200EC4351 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,10 @@
 		CA4848BA2AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848B92AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift */; };
 		CA4848CD2AF51E1600EC4351 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848CC2AF51E1600EC4351 /* String.swift */; };
 		CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848CE2AF51E3500EC4351 /* UIColor.swift */; };
+		CA4848D32AF53C2100EC4351 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D22AF53C2100EC4351 /* OnboardingCollectionViewCell.swift */; };
+		CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D42AF53CDC00EC4351 /* Newable.swift */; };
+		CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */; };
+		CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D92AF53E6600EC4351 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,7 @@
 		CA4848902AF51B8000EC4351 /* BooksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4848932AF51B8000EC4351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA4848952AF51B8000EC4351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA4848972AF51B8000EC4351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA4848972AF51B8000EC4351 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CA48489D2AF51B8000EC4351 /* BooksApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksApp.xcdatamodel; sourceTree = "<group>"; };
 		CA48489F2AF51B8200EC4351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4848A22AF51B8200EC4351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		CA4848B92AF51B8200EC4351 /* BooksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA4848CC2AF51E1600EC4351 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CA4848CE2AF51E3500EC4351 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CA4848D22AF53C2100EC4351 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA4848D42AF53CDC00EC4351 /* Newable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newable.swift; sourceTree = "<group>"; };
+		CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA4848D92AF53E6600EC4351 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +151,8 @@
 		CA4848C72AF51D0400EC4351 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				CA4848972AF51B8000EC4351 /* ViewController.swift */,
+				CA4848972AF51B8000EC4351 /* OnboardingViewController.swift */,
+				CA4848D02AF53BD700EC4351 /* Views */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 		CA4848C82AF51D8C00EC4351 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CA4848D62AF53D5200EC4351 /* Views */,
 				CA4848C92AF51D9A00EC4351 /* Extensions */,
 			);
 			path = Base;
@@ -161,8 +171,26 @@
 			children = (
 				CA4848CE2AF51E3500EC4351 /* UIColor.swift */,
 				CA4848CC2AF51E1600EC4351 /* String.swift */,
+				CA4848D42AF53CDC00EC4351 /* Newable.swift */,
+				CA4848D92AF53E6600EC4351 /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA4848D02AF53BD700EC4351 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848D22AF53C2100EC4351 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA4848D62AF53D5200EC4351 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */,
 				CA4848CD2AF51E1600EC4351 /* String.swift in Sources */,
 				CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */,
+				CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */,
 				CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */,
-				CA4848982AF51B8000EC4351 /* ViewController.swift in Sources */,
+				CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */,
 				CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */,
+				CA4848D32AF53C2100EC4351 /* OnboardingCollectionViewCell.swift in Sources */,
+				CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */,
 				CA4848962AF51B8000EC4351 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

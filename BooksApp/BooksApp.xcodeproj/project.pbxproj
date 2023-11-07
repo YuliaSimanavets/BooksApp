@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA06EAF62AFA996D00589848 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAF52AFA996D00589848 /* TabBarViewController.swift */; };
+		CA06EAFB2AFA9A4600589848 /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */; };
+		CA06EAFD2AFA9B6E00589848 /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */; };
+		CA06EAFF2AFA9B8C00589848 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAFE2AFA9B8C00589848 /* SettingsViewController.swift */; };
 		CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848932AF51B8000EC4351 /* AppDelegate.swift */; };
 		CA4848962AF51B8000EC4351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848952AF51B8000EC4351 /* SceneDelegate.swift */; };
 		CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848972AF51B8000EC4351 /* OnboardingViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA06EAF52AFA996D00589848 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
+		CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
+		CA06EAFE2AFA9B8C00589848 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CA4848902AF51B8000EC4351 /* BooksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4848932AF51B8000EC4351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA4848952AF51B8000EC4351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA06EAF72AFA999500589848 /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		CA06EAF82AFA99AB00589848 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CA06EAFE2AFA9B8C00589848 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CA06EAF92AFA99C100589848 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
 		CA4848872AF51B8000EC4351 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +145,7 @@
 			children = (
 				CA4848932AF51B8000EC4351 /* AppDelegate.swift */,
 				CA4848952AF51B8000EC4351 /* SceneDelegate.swift */,
+				CA06EAF52AFA996D00589848 /* TabBarViewController.swift */,
 				CA4848C82AF51D8C00EC4351 /* Base */,
 				CA4848C62AF51CF900EC4351 /* Modules */,
 				CA48489F2AF51B8200EC4351 /* Assets.xcassets */,
@@ -144,6 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				CA4848C72AF51D0400EC4351 /* Onboarding */,
+				CA06EAF72AFA999500589848 /* Bookshelf */,
+				CA06EAF92AFA99C100589848 /* SearchScreen */,
+				CA06EAF82AFA99AB00589848 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -323,12 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA06EAFB2AFA9A4600589848 /* BookshelfViewController.swift in Sources */,
 				CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */,
 				CA4848CD2AF51E1600EC4351 /* String.swift in Sources */,
+				CA06EAF62AFA996D00589848 /* TabBarViewController.swift in Sources */,
+				CA06EAFD2AFA9B6E00589848 /* SearchScreenViewController.swift in Sources */,
 				CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */,
 				CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */,
 				CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */,
 				CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */,
+				CA06EAFF2AFA9B8C00589848 /* SettingsViewController.swift in Sources */,
 				CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */,
 				CA4848D32AF53C2100EC4351 /* OnboardingCollectionViewCell.swift in Sources */,
 				CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */,

@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-struct AuthorViewModel {
-    let photo: UIImage?
+struct AuthorViewModel: Codable {
+//    let photo: UIImage?
+    let id: String
     let name: String
 }

@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-struct BookViewModel {
-    let bookImage: UIImage?
+struct BookViewModel: Codable {
+//    let bookImage: UIImage?
+    let id: String
     let bookTitle: String
     let bookAuthor: String
 }

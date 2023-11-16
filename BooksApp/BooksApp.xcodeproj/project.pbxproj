@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4C3E66A5D27D7E8FFBA160 /* Pods_BooksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68AB7B2CD1D99FF0E779D7C /* Pods_BooksApp.framework */; };
+		C817578AB7E188934CDF00DA /* Pods_BooksApp_BooksAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1DB36B26382AF9FF13BCAD /* Pods_BooksApp_BooksAppUITests.framework */; };
+		CA04313C2AFE9B7B00ABFFD6 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04313B2AFE9B7B00ABFFD6 /* ModuleBuilder.swift */; };
+		CA04313E2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04313D2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift */; };
 		CA06EAF62AFA996D00589848 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAF52AFA996D00589848 /* TabBarViewController.swift */; };
 		CA06EAFB2AFA9A4600589848 /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */; };
 		CA06EAFD2AFA9B6E00589848 /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */; };
@@ -15,6 +19,7 @@
 		CA06EB052AFAA37900589848 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EB042AFAA37900589848 /* BookViewModel.swift */; };
 		CA06EB072AFAA41F00589848 /* SearchScreenSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EB062AFAA41F00589848 /* SearchScreenSection.swift */; };
 		CA06EB092AFAA55D00589848 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06EB082AFAA55D00589848 /* MockData.swift */; };
+		CA1031682AFE97DD00370398 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1031672AFE97DD00370398 /* DataManager.swift */; };
 		CA1466CC2AFBE85E00FCD6FD /* AuthorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1466CB2AFBE85E00FCD6FD /* AuthorsCollectionViewCell.swift */; };
 		CA1466CE2AFBE87200FCD6FD /* BooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1466CD2AFBE87200FCD6FD /* BooksCollectionViewCell.swift */; };
 		CA1466D12AFBF1FF00FCD6FD /* HeaderSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1466D02AFBF1FF00FCD6FD /* HeaderSupplementaryView.swift */; };
@@ -33,6 +38,7 @@
 		CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D42AF53CDC00EC4351 /* Newable.swift */; };
 		CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */; };
 		CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D92AF53E6600EC4351 /* UIView.swift */; };
+		FAAC22A0644B9EB0983F8B88 /* Pods_BooksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		824800F0843EB0E018F94A0A /* Pods-BooksApp-BooksAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksApp-BooksAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BooksApp-BooksAppUITests/Pods-BooksApp-BooksAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8716D43B358FBF7B874D75C2 /* Pods-BooksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksApp.debug.xcconfig"; path = "Target Support Files/Pods-BooksApp/Pods-BooksApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8C75F16A72A2FFE7DF1C8020 /* Pods-BooksApp-BooksAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksApp-BooksAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BooksApp-BooksAppUITests/Pods-BooksApp-BooksAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96C02466B5BE4BA0686C7EA7 /* Pods-BooksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksApp.release.xcconfig"; path = "Target Support Files/Pods-BooksApp/Pods-BooksApp.release.xcconfig"; sourceTree = "<group>"; };
+		A68AB7B2CD1D99FF0E779D7C /* Pods_BooksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1AC0199CAF5B55AE4986606 /* Pods-BooksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BooksAppTests/Pods-BooksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA04313B2AFE9B7B00ABFFD6 /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		CA04313D2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenPresenter.swift; sourceTree = "<group>"; };
 		CA06EAF52AFA996D00589848 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
 		CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +75,7 @@
 		CA06EB042AFAA37900589848 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		CA06EB062AFAA41F00589848 /* SearchScreenSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenSection.swift; sourceTree = "<group>"; };
 		CA06EB082AFAA55D00589848 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		CA1031672AFE97DD00370398 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CA1466CB2AFBE85E00FCD6FD /* AuthorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA1466CD2AFBE87200FCD6FD /* BooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA1466D02AFBF1FF00FCD6FD /* HeaderSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSupplementaryView.swift; sourceTree = "<group>"; };
@@ -83,6 +98,9 @@
 		CA4848D42AF53CDC00EC4351 /* Newable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newable.swift; sourceTree = "<group>"; };
 		CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA4848D92AF53E6600EC4351 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CB1DB36B26382AF9FF13BCAD /* Pods_BooksApp_BooksAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksApp_BooksAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24169B15F67B57E7E870C86 /* Pods-BooksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksAppTests.release.xcconfig"; path = "Target Support Files/Pods-BooksAppTests/Pods-BooksAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4C3E66A5D27D7E8FFBA160 /* Pods_BooksApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAC22A0644B9EB0983F8B88 /* Pods_BooksAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +124,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C817578AB7E188934CDF00DA /* Pods_BooksApp_BooksAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CABE3D79FD6659858C851B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8716D43B358FBF7B874D75C2 /* Pods-BooksApp.debug.xcconfig */,
+				96C02466B5BE4BA0686C7EA7 /* Pods-BooksApp.release.xcconfig */,
+				8C75F16A72A2FFE7DF1C8020 /* Pods-BooksApp-BooksAppUITests.debug.xcconfig */,
+				824800F0843EB0E018F94A0A /* Pods-BooksApp-BooksAppUITests.release.xcconfig */,
+				B1AC0199CAF5B55AE4986606 /* Pods-BooksAppTests.debug.xcconfig */,
+				D24169B15F67B57E7E870C86 /* Pods-BooksAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		920C566EC0AB7035ED307858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A68AB7B2CD1D99FF0E779D7C /* Pods_BooksApp.framework */,
+				CB1DB36B26382AF9FF13BCAD /* Pods_BooksApp_BooksAppUITests.framework */,
+				EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA06EAF72AFA999500589848 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				CA06EAFC2AFA9B6E00589848 /* SearchScreenViewController.swift */,
+				CA04313D2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift */,
 				CA06EB082AFAA55D00589848 /* MockData.swift */,
 				CA1466CF2AFBF1DE00FCD6FD /* Header */,
 				CA06EB002AFAA2D300589848 /* Cells */,
@@ -150,11 +195,35 @@
 		CA06EB032AFAA33F00589848 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CA06EB012AFAA33900589848 /* AuthorViewModel.swift */,
-				CA06EB042AFAA37900589848 /* BookViewModel.swift */,
 				CA06EB062AFAA41F00589848 /* SearchScreenSection.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CA1031642AFE979E00370398 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA1031652AFE97A900370398 /* DataManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA1031652AFE97A900370398 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA1031672AFE97DD00370398 /* DataManager.swift */,
+				CA1031662AFE97CB00370398 /* Models */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		CA1031662AFE97CB00370398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA06EB012AFAA33900589848 /* AuthorViewModel.swift */,
+				CA06EB042AFAA37900589848 /* BookViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CA1466CF2AFBF1DE00FCD6FD /* Header */ = {
@@ -172,6 +241,8 @@
 				CA4848AC2AF51B8200EC4351 /* BooksAppTests */,
 				CA4848B62AF51B8200EC4351 /* BooksAppUITests */,
 				CA4848912AF51B8000EC4351 /* Products */,
+				3CABE3D79FD6659858C851B5 /* Pods */,
+				920C566EC0AB7035ED307858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +262,7 @@
 				CA4848932AF51B8000EC4351 /* AppDelegate.swift */,
 				CA4848952AF51B8000EC4351 /* SceneDelegate.swift */,
 				CA06EAF52AFA996D00589848 /* TabBarViewController.swift */,
+				CA1031642AFE979E00370398 /* Services */,
 				CA4848C82AF51D8C00EC4351 /* Base */,
 				CA4848C62AF51CF900EC4351 /* Modules */,
 				CA48489F2AF51B8200EC4351 /* Assets.xcassets */,
@@ -241,6 +313,7 @@
 		CA4848C82AF51D8C00EC4351 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CA04313B2AFE9B7B00ABFFD6 /* ModuleBuilder.swift */,
 				CA4848D62AF53D5200EC4351 /* Views */,
 				CA4848C92AF51D9A00EC4351 /* Extensions */,
 			);
@@ -281,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA4848BD2AF51B8200EC4351 /* Build configuration list for PBXNativeTarget "BooksApp" */;
 			buildPhases = (
+				F8A314379DE7F09D5FA3097B /* [CP] Check Pods Manifest.lock */,
 				CA48488C2AF51B8000EC4351 /* Sources */,
 				CA48488D2AF51B8000EC4351 /* Frameworks */,
 				CA48488E2AF51B8000EC4351 /* Resources */,
+				1C29B27CF23410848F1CDD99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA4848C02AF51B8200EC4351 /* Build configuration list for PBXNativeTarget "BooksAppTests" */;
 			buildPhases = (
+				A62197D4A5D60D7ACC147D0B /* [CP] Check Pods Manifest.lock */,
 				CA4848A52AF51B8200EC4351 /* Sources */,
 				CA4848A62AF51B8200EC4351 /* Frameworks */,
 				CA4848A72AF51B8200EC4351 /* Resources */,
@@ -316,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA4848C32AF51B8200EC4351 /* Build configuration list for PBXNativeTarget "BooksAppUITests" */;
 			buildPhases = (
+				AB2BA5748DB26F9CBB5D86B1 /* [CP] Check Pods Manifest.lock */,
 				CA4848AF2AF51B8200EC4351 /* Sources */,
 				CA4848B02AF51B8200EC4351 /* Frameworks */,
 				CA4848B12AF51B8200EC4351 /* Resources */,
+				A42B46188638082B187FD27E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +477,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C29B27CF23410848F1CDD99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BooksApp/Pods-BooksApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BooksApp/Pods-BooksApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BooksApp/Pods-BooksApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A42B46188638082B187FD27E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BooksApp-BooksAppUITests/Pods-BooksApp-BooksAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BooksApp-BooksAppUITests/Pods-BooksApp-BooksAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BooksApp-BooksAppUITests/Pods-BooksApp-BooksAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62197D4A5D60D7ACC147D0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BooksAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2BA5748DB26F9CBB5D86B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BooksApp-BooksAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A314379DE7F09D5FA3097B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BooksApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA48488C2AF51B8000EC4351 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -412,11 +593,14 @@
 				CA06EAF62AFA996D00589848 /* TabBarViewController.swift in Sources */,
 				CA06EAFD2AFA9B6E00589848 /* SearchScreenViewController.swift in Sources */,
 				CA06EB052AFAA37900589848 /* BookViewModel.swift in Sources */,
+				CA1031682AFE97DD00370398 /* DataManager.swift in Sources */,
 				CA4848CF2AF51E3500EC4351 /* UIColor.swift in Sources */,
 				CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */,
 				CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */,
+				CA04313E2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift in Sources */,
 				CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */,
 				CA06EB022AFAA33900589848 /* AuthorViewModel.swift in Sources */,
+				CA04313C2AFE9B7B00ABFFD6 /* ModuleBuilder.swift in Sources */,
 				CA06EAFF2AFA9B8C00589848 /* SettingsViewController.swift in Sources */,
 				CA1466CE2AFBE87200FCD6FD /* BooksCollectionViewCell.swift in Sources */,
 				CA06EB072AFAA41F00589848 /* SearchScreenSection.swift in Sources */,
@@ -588,6 +772,7 @@
 		};
 		CA4848BE2AF51B8200EC4351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8716D43B358FBF7B874D75C2 /* Pods-BooksApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -615,6 +800,7 @@
 		};
 		CA4848BF2AF51B8200EC4351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C02466B5BE4BA0686C7EA7 /* Pods-BooksApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -642,6 +828,7 @@
 		};
 		CA4848C12AF51B8200EC4351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AC0199CAF5B55AE4986606 /* Pods-BooksAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,6 +849,7 @@
 		};
 		CA4848C22AF51B8200EC4351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24169B15F67B57E7E870C86 /* Pods-BooksAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -682,6 +870,7 @@
 		};
 		CA4848C42AF51B8200EC4351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C75F16A72A2FFE7DF1C8020 /* Pods-BooksApp-BooksAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -700,6 +889,7 @@
 		};
 		CA4848C52AF51B8200EC4351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824800F0843EB0E018F94A0A /* Pods-BooksApp-BooksAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 final class SearchScreenViewController: UIViewController {
-
+    
+    var presenter: SearchScreenPresenterProtocol?
+    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -23,23 +25,25 @@ final class SearchScreenViewController: UIViewController {
         return collectionView
     }()
     
-//    private let orderButton: UIButton = {
-//        let button = UIButton()
-//        button.setTitle("Make order", for: .normal)
-//        button.setTitleColor(UIColor.Primary.title, for: .normal)
-//        button.backgroundColor = UIColor.Primary.lightButton
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        return button
-//    }()
+    private let plusButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "add"), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
-    private let sections = MockData.shared.pageData
+//    private let sections = MockData.shared.pageData
+    
+    private var sections: [SearchScreenSection] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.Primary.background
-//        view.addSubview(orderButton)
+        collectionView.addSubview(plusButton)
         setupCollectionView()
         setupConstraints()
+                
+        sections.append(.authors(presenter?.authors ?? []))
     }
 
     private func setupConstraints() {
@@ -47,13 +51,13 @@ final class SearchScreenViewController: UIViewController {
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
 //            collectionView.bottomAnchor.constraint(equalTo: orderButton.topAnchor, constant: -10),
 
-//            orderButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-//            orderButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-//            orderButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-//            orderButton.heightAnchor.constraint(equalToConstant: 70)
+            plusButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            plusButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            plusButton.heightAnchor.constraint(equalToConstant: 50),
+            plusButton.widthAnchor.constraint(equalToConstant: 50)
         ])
     }
 
@@ -69,6 +73,10 @@ final class SearchScreenViewController: UIViewController {
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: HeaderSupplementaryView.identifier)
         collectionView.collectionViewLayout = createLayout()
+    }
+    
+    func set(_ presenter: SearchScreenPresenterProtocol) {
+        self.presenter = presenter
     }
 }
 
@@ -104,7 +112,7 @@ extension SearchScreenViewController {
         let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1),
                                                             heightDimension: .fractionalHeight(1)))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.4),
-                                                                         heightDimension: .fractionalHeight(0.1)),
+                                                                         heightDimension: .fractionalHeight(0.2)),
                                                        subitems: [item])
         let section = createLayoutSection(group: group,
                                           behavior: .groupPaging,
@@ -158,12 +166,12 @@ extension SearchScreenViewController: UICollectionViewDataSource {
         switch sections[indexPath.section] {
         case .authors(let authors):
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AuthorsCollectionViewCell.identifier, for: indexPath) as? AuthorsCollectionViewCell else { return UICollectionViewCell() }
-            cell.setup(with: .init(photo: authors[indexPath.item].photo, name: authors[indexPath.item].name))
+            cell.setup(with: .init(photo: UIImage(named: "\(authors[indexPath.item].id)"), name: authors[indexPath.item].name))
             return cell
         case .books(let books):
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BooksCollectionViewCell.identifier, for: indexPath) as? BooksCollectionViewCell else { return UICollectionViewCell() }
 // MARK: - need to change
-            cell.setup(with: .init(bookImage: books[indexPath.item].bookImage, bookTitle: books[indexPath.item].bookTitle, bookAuthor: ""))
+            cell.setup(with: .init(bookImage: UIImage(named: "\(books[indexPath.item].id)"), bookTitle: books[indexPath.item].bookTitle, bookAuthor: ""))
 
             return cell
         }
@@ -191,11 +199,21 @@ extension SearchScreenViewController: UICollectionViewDelegateFlowLayout {
         let frame = collectionView.frame
         switch sections[indexPath.section] {
         case .authors(let item):
-            let author: AuthorCellViewModel = .init(photo: item[indexPath.section].photo, name: item[indexPath.section].name)
+            let author: AuthorCellViewModel = .init(photo: UIImage(named: "\(item[indexPath.item].id)"), name: item[indexPath.section].name)
             return AuthorsCollectionViewCell.size(for: author, containerSize: frame.size)
         case .books(let item):
-            let book: BookCellViewModel = .init(bookImage: item[indexPath.section].bookImage, bookTitle: item[indexPath.section].bookTitle, bookAuthor: "")
+            let book: BookCellViewModel = .init(bookImage: UIImage(named: "\(item[indexPath.item].id)"), bookTitle: item[indexPath.section].bookTitle, bookAuthor: "")
             return BooksCollectionViewCell.size(for: book, containerSize: frame.size)
         }
+    }
+}
+
+extension SearchScreenViewController: SearchScreenViewProtocol {
+    func succes() {
+        print("succes")
+    }
+    
+    func failure(error: Error) {
+        print("failure")
     }
 }

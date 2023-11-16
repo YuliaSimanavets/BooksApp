@@ -22,7 +22,7 @@ class AuthorsCollectionViewCell: BaseCollectionViewCell {
     private let photoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .white
-        imageView.layer.cornerRadius = 15
+        imageView.layer.cornerRadius = 25
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -40,6 +40,7 @@ class AuthorsCollectionViewCell: BaseCollectionViewCell {
     
     override func setupView() {
         super.setupView()
+        backgroundColor = .clear
         addSubviews(photoImageView, nameLabel)
         setupConstraints()
     }
@@ -54,7 +55,9 @@ class AuthorsCollectionViewCell: BaseCollectionViewCell {
             photoImageView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
             photoImageView.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             photoImageView.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
-            photoImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+            photoImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
+            photoImageView.heightAnchor.constraint(equalToConstant: 50),
+            photoImageView.widthAnchor.constraint(equalToConstant: 50)
         ])
     }
     

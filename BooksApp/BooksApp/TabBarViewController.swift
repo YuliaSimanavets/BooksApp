@@ -14,7 +14,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         let bookshelf = BookshelfViewController()
-        let searchScreen = SearchScreenViewController()
+        let searchScreen = ModuleBuilder.createSearchScreenModule()
         let settings = UINavigationController(rootViewController: SettingsViewController())
         
         self.setViewControllers([bookshelf, searchScreen, settings], animated: false)
@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
             items[i].image = UIImage(systemName: images[i])
         }
         
-        tabBar.barTintColor = .white
+        tabBar.barTintColor = UIColor.Primary.background
         tabBar.tintColor = .black
     }
 }

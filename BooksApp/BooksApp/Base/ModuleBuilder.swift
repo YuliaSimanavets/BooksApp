@@ -17,4 +17,11 @@ final class ModuleBuilder {
         view.set(presenter)
         return view
     }
+    
+    static func createPlusScreenModule() -> UIViewController {
+        let view = PlusScreenViewController()
+        let presenter = PlusScreenPresenter(view: view)
+        view.set(presenter)
+        return view
+    }
 }

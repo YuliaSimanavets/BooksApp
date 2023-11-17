@@ -38,6 +38,8 @@
 		CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D42AF53CDC00EC4351 /* Newable.swift */; };
 		CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */; };
 		CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D92AF53E6600EC4351 /* UIView.swift */; };
+		CABBFF0C2B07CB060086ADC8 /* PlusScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABBFF0B2B07CB060086ADC8 /* PlusScreenViewController.swift */; };
+		CABBFF0E2B07CB100086ADC8 /* PlusScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABBFF0D2B07CB100086ADC8 /* PlusScreenPresenter.swift */; };
 		FAAC22A0644B9EB0983F8B88 /* Pods_BooksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		CA4848D42AF53CDC00EC4351 /* Newable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newable.swift; sourceTree = "<group>"; };
 		CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA4848D92AF53E6600EC4351 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CABBFF0B2B07CB060086ADC8 /* PlusScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusScreenViewController.swift; sourceTree = "<group>"; };
+		CABBFF0D2B07CB100086ADC8 /* PlusScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusScreenPresenter.swift; sourceTree = "<group>"; };
 		CB1DB36B26382AF9FF13BCAD /* Pods_BooksApp_BooksAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksApp_BooksAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24169B15F67B57E7E870C86 /* Pods-BooksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksAppTests.release.xcconfig"; path = "Target Support Files/Pods-BooksAppTests/Pods-BooksAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +297,7 @@
 		CA4848C62AF51CF900EC4351 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CABBFF0A2B07CAC40086ADC8 /* PlusScreen */,
 				CA4848C72AF51D0400EC4351 /* Onboarding */,
 				CA06EAF72AFA999500589848 /* Bookshelf */,
 				CA06EAF92AFA99C100589848 /* SearchScreen */,
@@ -345,6 +350,15 @@
 				CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CABBFF0A2B07CAC40086ADC8 /* PlusScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CABBFF0B2B07CB060086ADC8 /* PlusScreenViewController.swift */,
+				CABBFF0D2B07CB100086ADC8 /* PlusScreenPresenter.swift */,
+			);
+			path = PlusScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,9 +617,11 @@
 				CA04313C2AFE9B7B00ABFFD6 /* ModuleBuilder.swift in Sources */,
 				CA06EAFF2AFA9B8C00589848 /* SettingsViewController.swift in Sources */,
 				CA1466CE2AFBE87200FCD6FD /* BooksCollectionViewCell.swift in Sources */,
+				CABBFF0C2B07CB060086ADC8 /* PlusScreenViewController.swift in Sources */,
 				CA06EB072AFAA41F00589848 /* SearchScreenSection.swift in Sources */,
 				CA06EB092AFAA55D00589848 /* MockData.swift in Sources */,
 				CA4848942AF51B8000EC4351 /* AppDelegate.swift in Sources */,
+				CABBFF0E2B07CB100086ADC8 /* PlusScreenPresenter.swift in Sources */,
 				CA4848D32AF53C2100EC4351 /* OnboardingCollectionViewCell.swift in Sources */,
 				CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */,
 				CA4848962AF51B8000EC4351 /* SceneDelegate.swift in Sources */,

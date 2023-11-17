@@ -17,11 +17,13 @@ class TabBarViewController: UITabBarController {
         let searchScreen = ModuleBuilder.createSearchScreenModule()
         let settings = UINavigationController(rootViewController: SettingsViewController())
         
-        self.setViewControllers([bookshelf, searchScreen, settings], animated: false)
+        let plusScreen = ModuleBuilder.createPlusScreenModule()
+        
+        self.setViewControllers([bookshelf, searchScreen, plusScreen, settings], animated: false)
        
         guard let items = tabBar.items else { return }
         
-        let images = ["books.vertical.fill", "magnifyingglass.circle.fill", "gearshape.fill"]
+        let images = ["books.vertical.fill", "magnifyingglass.circle.fill", "plus.circle", "gearshape.fill"]
         
         for i in 0..<items.count {
             items[i].image = UIImage(systemName: images[i])

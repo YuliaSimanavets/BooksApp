@@ -17,8 +17,11 @@ public extension UIColor {
             return "#a96d8e".hexColor
         }
         static var title: UIColor {
-            return "#7e3d4a".hexColor
+            return "#000000".hexColor
         }
+//        static var title: UIColor {
+//            return "#7e3d4a".hexColor
+//        }
         static var subtitle: UIColor {
             return "#e2c9c3".hexColor
         }

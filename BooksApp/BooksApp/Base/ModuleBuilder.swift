@@ -17,4 +17,11 @@ final class ModuleBuilder {
         view.set(presenter)
         return view
     }
+    
+    static func createBookshelfModule() -> UIViewController {
+        let view = BookshelfViewController()
+        let presenter = BookshelfPresenter(view: view)
+        view.set(presenter)
+        return view
+    }
 }

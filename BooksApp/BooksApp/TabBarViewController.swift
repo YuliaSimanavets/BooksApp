@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let bookshelf = BookshelfViewController()
+        let bookshelf = ModuleBuilder.createBookshelfModule()
         let searchScreen = ModuleBuilder.createSearchScreenModule()
         let settings = UINavigationController(rootViewController: SettingsViewController())
         

@@ -38,6 +38,9 @@
 		CA4848D52AF53CDC00EC4351 /* Newable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D42AF53CDC00EC4351 /* Newable.swift */; };
 		CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */; };
 		CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4848D92AF53E6600EC4351 /* UIView.swift */; };
+		CABBFF102B07CED60086ADC8 /* BookshelfPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABBFF0F2B07CED60086ADC8 /* BookshelfPresenter.swift */; };
+		CABBFF132B07D1F70086ADC8 /* BookshelfCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABBFF122B07D1F70086ADC8 /* BookshelfCollectionViewCell.swift */; };
+		CAE719AF2B0BC701008BCF7B /* EmptyStateCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE719AE2B0BC701008BCF7B /* EmptyStateCustomView.swift */; };
 		FAAC22A0644B9EB0983F8B88 /* Pods_BooksAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,9 @@
 		CA4848D42AF53CDC00EC4351 /* Newable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newable.swift; sourceTree = "<group>"; };
 		CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA4848D92AF53E6600EC4351 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CABBFF0F2B07CED60086ADC8 /* BookshelfPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfPresenter.swift; sourceTree = "<group>"; };
+		CABBFF122B07D1F70086ADC8 /* BookshelfCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAE719AE2B0BC701008BCF7B /* EmptyStateCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCustomView.swift; sourceTree = "<group>"; };
 		CB1DB36B26382AF9FF13BCAD /* Pods_BooksApp_BooksAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksApp_BooksAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24169B15F67B57E7E870C86 /* Pods-BooksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksAppTests.release.xcconfig"; path = "Target Support Files/Pods-BooksAppTests/Pods-BooksAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAC3DB9B3DA3960000AC5F25 /* Pods_BooksAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BooksAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				CA06EAFA2AFA9A4600589848 /* BookshelfViewController.swift */,
+				CABBFF0F2B07CED60086ADC8 /* BookshelfPresenter.swift */,
+				CAE719AD2B0BC6EC008BCF7B /* View */,
+				CABBFF112B07D1D20086ADC8 /* Cell */,
 			);
 			path = Bookshelf;
 			sourceTree = "<group>";
@@ -345,6 +354,22 @@
 				CA4848D72AF53D6100EC4351 /* BaseCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CABBFF112B07D1D20086ADC8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CABBFF122B07D1F70086ADC8 /* BookshelfCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CAE719AD2B0BC6EC008BCF7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAE719AE2B0BC701008BCF7B /* EmptyStateCustomView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1466CC2AFBE85E00FCD6FD /* AuthorsCollectionViewCell.swift in Sources */,
+				CAE719AF2B0BC701008BCF7B /* EmptyStateCustomView.swift in Sources */,
 				CA06EAFB2AFA9A4600589848 /* BookshelfViewController.swift in Sources */,
 				CA4848DA2AF53E6600EC4351 /* UIView.swift in Sources */,
 				CA1466D12AFBF1FF00FCD6FD /* HeaderSupplementaryView.swift in Sources */,
@@ -598,8 +624,10 @@
 				CA4848D82AF53D6100EC4351 /* BaseCollectionViewCell.swift in Sources */,
 				CA48489E2AF51B8000EC4351 /* BooksApp.xcdatamodeld in Sources */,
 				CA04313E2AFE9BC500ABFFD6 /* SearchScreenPresenter.swift in Sources */,
+				CABBFF102B07CED60086ADC8 /* BookshelfPresenter.swift in Sources */,
 				CA4848982AF51B8000EC4351 /* OnboardingViewController.swift in Sources */,
 				CA06EB022AFAA33900589848 /* AuthorViewModel.swift in Sources */,
+				CABBFF132B07D1F70086ADC8 /* BookshelfCollectionViewCell.swift in Sources */,
 				CA04313C2AFE9B7B00ABFFD6 /* ModuleBuilder.swift in Sources */,
 				CA06EAFF2AFA9B8C00589848 /* SettingsViewController.swift in Sources */,
 				CA1466CE2AFBE87200FCD6FD /* BooksCollectionViewCell.swift in Sources */,
